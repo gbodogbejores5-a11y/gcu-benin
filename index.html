@@ -1,13 +1,205 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title></title>
-  <meta name="robots" content="noindex, nofollow">
-  <style>
-    html, body { display: none; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GCU-BÉNIN — Génie Civil Unis Bénin | Communauté nationale du génie civil</title>
+<meta name="description" content="GÉNIE CIVIL UNIS — BÉNIN : la communauté qui rassemble élèves, étudiants, techniciens et ingénieurs du génie civil au Bénin. Ressources, événements, stages et emplois.">
+<meta name="theme-color" content="#0b1f3a">
+<meta property="og:type" content="website">
+<meta property="og:title" content="GCU-BÉNIN — Génie Civil Unis Bénin | Communauté nationale du génie civil">
+<meta property="og:description" content="GÉNIE CIVIL UNIS — BÉNIN : la communauté qui rassemble élèves, étudiants, techniciens et ingénieurs du génie civil au Bénin. Ressources, événements, stages et emplois.">
+<meta property="og:image" content="assets/images/og-image.jpg">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div id="site-header"></div>
+<main id="main">
+<section class="hero blueprint">
+  <div class="container hero-grid">
+    <div>
+      <span class="hero-badge"><i></i> Communauté nationale · Bénin</span>
+      <h1>Unis par le génie civil,<em>bâtissons l'avenir du Bénin.</em></h1>
+      <p class="tagline">GCU-BÉNIN rassemble les élèves, étudiants, techniciens, ingénieurs et passionnés du bâtiment et des travaux publics pour partager les connaissances, se former et construire ensemble.</p>
+      <div class="hero-actions">
+        <a class="btn btn-light" href="a-propos.html">Découvrir GCU-BÉNIN <i data-icon="arrow" data-size="18"></i></a>
+        <a class="btn btn-primary" href="adhesion.html">Rejoindre la communauté</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 440 400" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <g stroke="#4cc9f0" stroke-opacity=".35" stroke-width="1" stroke-dasharray="3 6">
+          <path d="M20 360H420M20 320H420M20 280H420"/>
+        </g>
+        <!-- bâtiment en construction -->
+        <g stroke="#fff" stroke-width="2.5" stroke-opacity=".9">
+          <path class="draw d1" pathLength="1" d="M70 360V150H200V360"/>
+          <path class="draw d2" pathLength="1" d="M70 200H200M70 250H200M70 300H200"/>
+          <path class="draw d2" pathLength="1" d="M100 360V150M135 360V150M170 360V150" stroke-opacity=".45"/>
+          <path class="draw d3" pathLength="1" d="M70 150L200 150" stroke="#ffb400" stroke-width="4"/>
+        </g>
+        <!-- arche / pont -->
+        <path class="draw d3" pathLength="1" d="M215 360Q320 210 425 360" stroke="#ffb400" stroke-width="4"/>
+        <g stroke="#fff" stroke-width="2" stroke-opacity=".7">
+          <path class="draw d4" pathLength="1" d="M245 360V300M275 360V268M305 360V256M335 360V268M365 360V300M395 360V335"/>
+        </g>
+        <path class="draw d4" pathLength="1" d="M205 356H430" stroke="#fff" stroke-width="5"/>
+        <!-- grue -->
+        <g stroke="#ffb400" stroke-width="3.5">
+          <path class="draw d2" pathLength="1" d="M300 20V196M300 20H400M300 20L255 62M300 20L395 20"/>
+          <path class="draw d3" pathLength="1" d="M300 60L255 62M300 60L400 20" stroke-opacity=".6" stroke-width="2"/>
+        </g>
+        <g class="swing" style="transform-origin:372px 20px">
+          <path d="M372 20V84" stroke="#fff" stroke-width="2"/>
+          <path d="M360 84H384L378 100H366Z" fill="#ffb400" stroke="none"/>
+          <rect x="358" y="100" width="28" height="18" fill="#4cc9f0" fill-opacity=".8" stroke="none"/>
+        </g>
+        <rect x="288" y="190" width="24" height="8" fill="#ffb400" stroke="none"/>
+        <circle cx="200" cy="360" r="3" fill="#ffb400" stroke="none"/>
+      </svg>
+    </div>
+  </div>
+  <div class="hero-wave"><svg viewBox="0 0 1440 70" preserveAspectRatio="none"><path d="M0 70V30C240 0 480 62 720 40C960 18 1200 0 1440 30V70Z" fill="#fff"/></svg></div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="marquee-track">
+  <span>Bâtiment</span><span>Routes et travaux publics</span><span>Béton armé</span><span>Topographie</span><span>Structures et fondations</span><span>Métré et devis</span><span>Lecture de plans</span><span>Sécurité sur les chantiers</span>
+  <span>Bâtiment</span><span>Routes et travaux publics</span><span>Béton armé</span><span>Topographie</span><span>Structures et fondations</span><span>Métré et devis</span><span>Lecture de plans</span><span>Sécurité sur les chantiers</span>
+</div></div>
+
+<section class="section">
+  <div class="container">
+    <div class="stats reveal" id="home-stats" style="margin-top:0"></div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:20px">
+  <div class="container split">
+    <div class="reveal">
+      <span class="eyebrow">Qui sommes-nous</span>
+      <h2>Une communauté, une passion, un pays à bâtir</h2>
+      <p class="lead">GCU-BÉNIN est un projet de communauté destiné à rassembler celles et ceux qui s'intéressent au génie civil au Bénin : élèves, étudiants, techniciens, ingénieurs et autres passionnés.</p>
+      <p>Partager des connaissances, créer des espaces d'échange, informer sur les formations, les stages et les emplois, valoriser les métiers du bâtiment et des travaux publics : voilà ce qui nous rassemble.</p>
+      <a class="btn btn-dark" href="a-propos.html">En savoir plus <i data-icon="arrow" data-size="18"></i></a>
+    </div>
+    <div class="reveal" data-delay="1">
+      <div class="photo ph" data-photo="assets/images/about.jpg"><span class="corner tl"></span><span class="corner br"></span><div class="ph-art"><i data-icon="building" data-size="120"></i></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-dark blueprint">
+  <div class="container">
+    <div class="section-head center reveal"><span class="eyebrow">Mission &amp; vision</span><h2>Ce qui guide chacune de nos actions</h2></div>
+    <div class="grid grid-2">
+      <article class="feature reveal">
+        <div class="icon-badge"><i data-icon="eye" data-size="28"></i></div>
+        <h3>Notre vision</h3>
+        <p>Construire une communauté nationale dynamique, solidaire et engagée, qui favorise les connaissances, la collaboration et le développement des compétences dans le domaine du génie civil.</p>
+      </article>
+      <article class="feature reveal" data-delay="1">
+        <div class="icon-badge"><i data-icon="target" data-size="28"></i></div>
+        <h3>Notre mission</h3>
+        <p>Rassembler les acteurs du génie civil, encourager la transmission des connaissances, créer des espaces d'échange et informer sur les opportunités de formation et d'emploi.</p>
+      </article>
+    </div>
+    <div class="grid grid-4 mt-3">
+      <div class="feature reveal"><div class="icon-badge"><i data-icon="handshake" data-size="26"></i></div><h4>Solidarité</h4><p>Avancer ensemble, s'entraider.</p></div>
+      <div class="feature reveal" data-delay="1"><div class="icon-badge"><i data-icon="book" data-size="26"></i></div><h4>Partage des connaissances</h4><p>Le savoir grandit quand il circule.</p></div>
+      <div class="feature reveal" data-delay="2"><div class="icon-badge"><i data-icon="shieldcheck" data-size="26"></i></div><h4>Intégrité</h4><p>Des actes à la hauteur des paroles.</p></div>
+      <div class="feature reveal" data-delay="3"><div class="icon-badge"><i data-icon="bulb" data-size="26"></i></div><h4>Innovation</h4><p>Des idées neuves pour bâtir mieux.</p></div>
+    </div>
+    <p class="center mt-3"><a class="btn btn-light" href="a-propos.html#objectifs">Voir nos objectifs et nos valeurs</a></p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head center reveal"><span class="eyebrow">Comment ça marche</span><h2>Rejoindre GCU-BÉNIN en 4 étapes</h2></div>
+    <div class="steps">
+      <div class="step reveal"><p>Je découvre la communauté et ses conditions d'adhésion.</p></div>
+      <div class="step reveal" data-delay="1"><p>Je remplis le formulaire de demande d'adhésion.</p></div>
+      <div class="step reveal" data-delay="2"><p>Ma demande est examinée, je suis son statut avec mon code de suivi.</p></div>
+      <div class="step reveal" data-delay="3"><p>Après validation, j'accède à mon espace membre et à ma carte numérique.</p></div>
+    </div>
+    <p class="center mt-3"><a class="btn btn-primary" href="adhesion.html">Rejoindre GCU-BÉNIN</a></p>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head reveal"><span class="eyebrow">Organisation</span><h2>Une structure claire et transparente</h2>
+      <p class="lead">L'Assemblée générale, la Direction nationale, les Coordinations locales et les Commissions techniques : chaque organe a son rôle.</p></div>
+    <div class="grid grid-4">
+      <div class="feature reveal"><div class="icon-badge"><i data-icon="users" data-size="26"></i></div><h4>Assemblée générale</h4></div>
+      <div class="feature reveal" data-delay="1"><div class="icon-badge"><i data-icon="flag" data-size="26"></i></div><h4>Direction nationale</h4></div>
+      <div class="feature reveal" data-delay="2"><div class="icon-badge"><i data-icon="pin" data-size="26"></i></div><h4>Coordinations locales</h4></div>
+      <div class="feature reveal" data-delay="3"><div class="icon-badge"><i data-icon="layers" data-size="26"></i></div><h4>Commissions techniques</h4></div>
+    </div>
+    <p class="mt-3"><a class="btn btn-outline" href="organisation.html">Découvrir l'organisation</a></p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal"><span class="eyebrow">À la une</span><h2>Dernières actualités</h2></div>
+    <div class="grid grid-3" id="home-news"><div class="loader"><i></i></div></div>
+    <p class="mt-3"><a class="btn btn-outline" href="actualites.html">Toutes les actualités</a></p>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head reveal"><span class="eyebrow">Agenda</span><h2>Prochains événements</h2></div>
+    <div id="home-events"><div class="loader"><i></i></div></div>
+    <p class="mt-3"><a class="btn btn-outline" href="evenements.html">Tous les événements</a></p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal"><span class="eyebrow">Ressources techniques</span><h2>Apprendre, réviser, progresser</h2>
+      <p class="lead">Une bibliothèque de connaissances en génie civil, organisée par domaine.</p></div>
+    <div class="grid grid-4" id="home-resources"></div>
+    <p class="mt-3"><a class="btn btn-dark" href="ressources.html">Explorer les ressources</a></p>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head reveal"><span class="eyebrow">Opportunités</span><h2>Stages, formations et emplois</h2></div>
+    <div class="grid grid-3" id="home-opps"><div class="loader"><i></i></div></div>
+    <p class="mt-3"><a class="btn btn-outline" href="opportunites.html">Toutes les opportunités</a></p>
+  </div>
+</section>
+
+<section class="section" id="home-partners-wrap" hidden>
+  <div class="container">
+    <div class="section-head center reveal"><span class="eyebrow">Partenaires</span><h2>Ils nous soutiennent</h2></div>
+    <div class="grid grid-4" id="home-partners"></div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="cta reveal">
+      <span class="eyebrow" style="color:var(--amber)">Devenir membre</span>
+      <h2>Votre place est dans la communauté</h2>
+      <p>Rejoignez GCU-BÉNIN, accédez aux ressources, participez aux événements et recevez votre carte de membre numérique.</p>
+      <div class="hero-actions"><a class="btn btn-primary" href="adhesion.html">Faire une demande d'adhésion</a><a class="btn btn-light" href="contact.html">Nous contacter</a></div>
+      <div class="socials mt-3" id="home-socials"></div>
+    </div>
+  </div>
+</section>
+</main>
+<div id="site-footer"></div>
+<script type="module" src="js/init.js"></script>
+<script type="module" src="js/home.js"></script>
+
 </body>
 </html>

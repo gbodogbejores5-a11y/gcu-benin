@@ -1,138 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Formulaire d'adhésion à GCU-BÉNIN. Rejoignez notre communauté du génie civil.">
-  <meta name="theme-color" content="#1E40AF">
-  <title>Adhésion — GÉNIE CIVIL UNIS — BÉNIN</title>
-  
-  <link rel="icon" type="image/png" href="assets/images/logo.png">
-  
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adhésion — GCU-BÉNIN</title>
+<meta name="description" content="Faites votre demande d'adhésion à GCU-BÉNIN et suivez son statut en ligne.">
+<meta name="theme-color" content="#0b1f3a">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Adhésion — GCU-BÉNIN">
+<meta property="og:description" content="Faites votre demande d'adhésion à GCU-BÉNIN et suivez son statut en ligne.">
+<meta property="og:image" content="assets/images/og-image.jpg">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
-<body data-page="adhesion">
-  <div id="site-header"></div>
-  
-  <main id="main">
-    <!-- Hero -->
-    <section class="hero-sub" style="background: linear-gradient(rgba(30, 64, 175, 0.9), rgba(30, 64, 175, 0.8)), url('../assets/images/bg-hero.jpg'); background-size: cover; background-position: center; color: white; padding: 6rem 0;">
-      <div class="container" style="text-align: center;">
-        <h1 data-animate>Devenir membre de GCU-BÉNIN</h1>
-        <p class="hero-slogan" data-animate data-delay="1" style="font-style: italic; opacity: 0.9; max-width: 700px; margin-inline: auto;">
-          Rejoignez notre communauté et contribuez au développement du génie civil au Bénin.
-        </p>
-      </div>
-    </section>
+<body>
+<div id="site-header"></div>
+<main id="main">
+<section class="page-hero blueprint"><div class="container"><nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a> / Adhésion</nav><h1>Rejoindre GCU-BÉNIN</h1><p>Remplissez le formulaire, suivez votre demande, puis accédez à votre espace membre.</p></div></section>
+<section class="section"><div class="container" style="max-width:860px">
+  <div class="tabs" role="tablist"><button class="tab active" data-t="form" type="button">Demande d'adhésion</button><button class="tab" data-t="track" type="button">Suivre ma demande</button></div>
 
-    <!-- Formulaire -->
-    <section class="section">
-      <div class="container">
-        <div style="max-width: 700px; margin-inline: auto;">
-          <div data-animate style="background: white; border-radius: var(--border-radius-xl); padding: 2.5rem; box-shadow: var(--shadow-xl);">
-            <h2 style="text-align: center; margin-bottom: 1.5rem; color: var(--primary);">Formulaire de demande d'adhésion</h2>
-            
-            <form id="adhesionForm" data-validate style="display: grid; gap: 1.5rem;">
-              <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
-                <div>
-                  <label for="nom" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Nom *</label>
-                  <input type="text" id="nom" name="nom" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--gray-300); border-radius: var(--border-radius-md); font-size: 1rem;">
-                </div>
-                <div>
-                  <label for="prenom" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Prénom *</label>
-                  <input type="text" id="prenom" name="prenom" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--gray-300); border-radius: var(--border-radius-md); font-size: 1rem;">
-                </div>
-              </div>
-              
-              <div>
-                <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Adresse e-mail *</label>
-                <input type="email" id="email" name="email" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--gray-300); border-radius: var(--border-radius-md); font-size: 1rem;">
-              </div>
-              
-              <div>
-                <label for="telephone" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Téléphone</label>
-                <input type="tel" id="telephone" name="telephone" style="width: 100%; padding: 0.75rem; border: 1px solid var(--gray-300); border-radius: var(--border-radius-md); font-size: 1rem;">
-              </div>
-              
-              <div>
-                <label for="commune" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Commune</label>
-                <input type="text" id="commune" name="commune" style="width: 100%; padding: 0.75rem; border: 1px solid var(--gray-300); border-radius: var(--border-radius-md); font-size: 1rem;">
-              </div>
-              
-              <div>
-                <label for="niveau" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Niveau d'études / Profession *</label>
-                <select id="niveau" name="niveau" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--gray-300); border-radius: var(--border-radius-md); font-size: 1rem;">
-                  <option value="">Sélectionner...</option>
-                  <option>Élève (2e)</option>
-                  <option>Élève (Tle)</option>
-                  <option>Étudiant (BTS/DUT)</option>
-                  <option>Étudiant (Licence)</option>
-                  <option>Étudiant (Master)</option>
-                  <option>Étudiant (Doctorat)</option>
-                  <option>Technicien</option>
-                  <option>Ingénieur</option>
-                  <option>Architecte</option>
-                  <option>Professionnel du BTP</option>
-                  <option>Autre</option>
-                </select>
-              </div>
-              
-              <div>
-                <label for="etablissement" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Établissement / Structure</label>
-                <input type="text" id="etablissement" name="etablissement" style="width: 100%; padding: 0.75rem; border: 1px solid var(--gray-300); border-radius: var(--border-radius-md); font-size: 1rem;">
-              </div>
-              
-              <div>
-                <label for="domaine" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Domaine d'intérêt</label>
-                <input type="text" id="domaine" name="domaine" placeholder="Ex: Génie civil, architecture, TP..." style="width: 100%; padding: 0.75rem; border: 1px solid var(--gray-300); border-radius: var(--border-radius-md); font-size: 1rem;">
-              </div>
-              
-              <div>
-                <label for="motivation" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Motivation *</label>
-                <textarea id="motivation" name="motivation" required rows="4" placeholder="Pourquoi souhaitez-vous rejoindre GCU-BÉNIN ?" style="width: 100%; padding: 0.75rem; border: 1px solid var(--gray-300); border-radius: var(--border-radius-md); font-size: 1rem; resize: vertical;"></textarea>
-              </div>
-              
-              <div style="display: flex; align-items: flex-start; gap: 0.75rem;">
-                <input type="checkbox" id="cg" name="cg" required style="margin-top: 0.25rem;">
-                <label for="cg" style="font-weight: normal; color: var(--gray-700);">
-                  J'accepte les conditions d'adhésion et le traitement de mes données personnelles.*
-                </label>
-              </div>
-              
-              <div style="display: flex; align-items: flex-start; gap: 0.75rem;">
-                <input type="checkbox" id="news" name="news" style="margin-top: 0.25rem;">
-                <label for="news" style="font-weight: normal; color: var(--gray-700);">
-                  Je souhaite recevoir les actualités et événements de GCU-BÉNIN
-                </label>
-              </div>
-              
-              <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem;">
-                Envoyer ma demande d'adhésion
-              </button>
-            </form>
-          </div>
+  <div id="pane-form">
+    <div class="form-card">
+      <form class="form" id="adh-form" novalidate>
+        <div class="form-row">
+          <div class="field"><label for="f-last">Nom <span class="req">*</span></label><input id="f-last" name="last_name" required maxlength="100" autocomplete="family-name"></div>
+          <div class="field"><label for="f-first">Prénom <span class="req">*</span></label><input id="f-first" name="first_name" required maxlength="100" autocomplete="given-name"></div>
         </div>
-      </div>
-    </section>
+        <div class="form-row">
+          <div class="field"><label for="f-email">Adresse e-mail <span class="req">*</span></label><input id="f-email" name="email" type="email" required maxlength="200" autocomplete="email"><span class="hint">Utilisez la même adresse pour créer votre compte après acceptation.</span></div>
+          <div class="field"><label for="f-phone">Téléphone (facultatif)</label><input id="f-phone" name="phone" type="tel" maxlength="40" autocomplete="tel" placeholder="+229 …"></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label for="f-commune">Commune</label><input id="f-commune" name="commune" list="communes" maxlength="100" autocomplete="off"><datalist id="communes"></datalist></div>
+          <div class="field"><label for="f-level">Niveau d'études ou profession</label><select id="f-level" name="level"><option value="">Choisir…</option></select></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label for="f-inst">Établissement ou structure (si pertinent)</label><input id="f-inst" name="institution" maxlength="200"></div>
+          <div class="field"><label for="f-int">Domaine d'intérêt</label><input id="f-int" name="interest" maxlength="200" placeholder="Ex. béton armé, topographie, routes…"></div>
+        </div>
+        <div class="field"><label for="f-mot">Motivation</label><textarea id="f-mot" name="motivation" maxlength="2000" placeholder="Pourquoi souhaitez-vous rejoindre GCU-BÉNIN ?"></textarea></div>
+        <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <label class="check"><input type="checkbox" name="rules" required> <span>J'ai pris connaissance des <a href="reglement-interieur.html" target="_blank">règles de la communauté</a> et je m'engage à les respecter. <span class="req" style="color:var(--red)">*</span></span></label>
+        <label class="check"><input type="checkbox" name="consent" required> <span>J'accepte que mes données personnelles soient traitées pour examiner ma demande, selon la <a href="confidentialite.html" target="_blank">politique de confidentialité</a>. <span class="req" style="color:var(--red)">*</span></span></label>
+        <div id="adh-msg" role="alert"></div>
+        <button class="btn btn-primary" type="submit" id="adh-btn">Envoyer ma demande</button>
+        <p class="hint">Seules les informations utiles à l'examen de votre demande sont collectées.</p>
+      </form>
+    </div>
+  </div>
 
-    <!-- Footer CTA -->
-    <section style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: white; text-align: center;" data-animate>
-      <div class="container" style="padding: 3rem 0;">
-        <h2 style="font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 1rem;">Questions ?</h2>
-        <p style="max-width: 600px; margin-inline: auto; margin-bottom: 1.5rem; opacity: 0.9;">
-          Contactez-nous pour toute question sur l'adhésion ou nos activités.
-        </p>
-        <a href="contact.html" class="btn" style="background: white; color: var(--primary);">
-          Nous contacter
-        </a>
-      </div>
-    </section>
-  </main>
+  <div id="pane-track" class="hidden">
+    <div class="form-card">
+      <h2 style="font-size:1.8rem">Suivre ma demande</h2>
+      <form class="form" id="trk-form" novalidate>
+        <div class="form-row">
+          <div class="field"><label for="t-code">Code de suivi</label><input id="t-code" required placeholder="ADH-XXXXXXXX" maxlength="20" autocomplete="off"></div>
+          <div class="field"><label for="t-email">Adresse e-mail utilisée</label><input id="t-email" type="email" required autocomplete="email"></div>
+        </div>
+        <div id="trk-msg" role="status"></div>
+        <button class="btn btn-dark" type="submit">Consulter le statut</button>
+      </form>
+    </div>
+  </div>
+</div></section>
+</main>
+<div id="site-footer"></div>
+<script type="module" src="js/init.js"></script>
+<script type="module" src="js/adhesion.js"></script>
 
-  <div id="site-footer"></div>
-  
-  <script src="js/config.js"></script>
-  <script src="js/main.js"></script>
 </body>
 </html>

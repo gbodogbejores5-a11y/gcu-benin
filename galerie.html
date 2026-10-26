@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Galerie — GCU-BÉNIN</title>
+<meta name="description" content="Photos et vidéos des rencontres, conférences, ateliers et événements officiels de GCU-BÉNIN.">
+<meta name="theme-color" content="#0b1f3a">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Galerie — GCU-BÉNIN">
+<meta property="og:description" content="Photos et vidéos des rencontres, conférences, ateliers et événements officiels de GCU-BÉNIN.">
+<meta property="og:image" content="assets/images/og-image.jpg">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main id="main">
+<section class="page-hero blueprint"><div class="container"><nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a> / Galerie</nav><h1>Galerie</h1><p>Les moments forts de la communauté en images.</p></div></section>
+<section class="section"><div class="container">
+  <div class="chips" id="g-chips" style="margin-bottom:26px"></div>
+  <div class="gallery" id="g-list"><div class="loader"><i></i></div></div>
+</div></section>
+<div class="lightbox" id="lb" role="dialog" aria-modal="true" aria-label="Visionneuse"><button class="lb-btn lb-close" type="button" aria-label="Fermer" id="lb-x"></button><button class="lb-btn lb-prev" type="button" aria-label="Précédent" id="lb-p"></button><button class="lb-btn lb-next" type="button" aria-label="Suivant" id="lb-n"></button><figure id="lb-fig"></figure></div>
+</main>
+<div id="site-footer"></div>
+<script type="module" src="js/init.js"></script>
+<script type="module" src="js/galerie.js"></script>
+
+</body>
+</html>

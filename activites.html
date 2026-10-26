@@ -1,90 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Nos activités. Conférences, ateliers, rencontres techniques, visites et plus encore.">
-  <meta name="theme-color" content="#1E40AF">
-  <title>Nos activités — GÉNIE CIVIL UNIS — BÉNIN</title>
-  
-  <link rel="icon" type="image/png" href="assets/images/logo.png">
-  
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nos activités — GCU-BÉNIN</title>
+<meta name="description" content="Rencontres techniques, conférences, ateliers, partages de connaissances et visites techniques organisés par GCU-BÉNIN.">
+<meta name="theme-color" content="#0b1f3a">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Nos activités — GCU-BÉNIN">
+<meta property="og:description" content="Rencontres techniques, conférences, ateliers, partages de connaissances et visites techniques organisés par GCU-BÉNIN.">
+<meta property="og:image" content="assets/images/og-image.jpg">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
-<body data-page="activites">
-  <div id="site-header"></div>
-  
-  <main id="main">
-    <!-- Hero -->
-    <section class="hero-sub" style="background: linear-gradient(rgba(30, 64, 175, 0.9), rgba(30, 64, 175, 0.8)), url('../assets/images/bg-hero.jpg'); background-size: cover; background-position: center; color: white; padding: 6rem 0;">
-      <div class="container" style="text-align: center;">
-        <h1 data-animate>Nos activités</h1>
-        <p class="hero-slogan" data-animate data-delay="1" style="font-style: italic; opacity: 0.9; max-width: 700px; margin-inline: auto;">
-          Conférences, ateliers, rencontres et projets pour faire grandir la communauté du génie civil.
-        </p>
-      </div>
-    </section>
+<body>
+<div id="site-header"></div>
+<main id="main">
+<section class="page-hero blueprint"><div class="container"><nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a> / Activités</nav><h1>Nos activités</h1><p>Rencontrer, apprendre, partager : ce que la communauté organise ou envisage.</p></div></section>
+<section class="section"><div class="container">
+  <div class="grid grid-3">
+    <article class="feature reveal"><div class="icon-badge"><i data-icon="users" data-size="26"></i></div><h3>Rencontres techniques</h3><p>Des temps d'échange autour de sujets concrets du bâtiment et des travaux publics.</p></article>
+    <article class="feature reveal" data-delay="1"><div class="icon-badge"><i data-icon="star" data-size="26"></i></div><h3>Conférences et présentations professionnelles</h3><p>Des professionnels partagent leur parcours et leur expertise.</p></article>
+    <article class="feature reveal" data-delay="2"><div class="icon-badge"><i data-icon="hammer" data-size="26"></i></div><h3>Ateliers de formation</h3><p>Des séances pratiques pour apprendre en faisant.</p></article>
+    <article class="feature reveal"><div class="icon-badge"><i data-icon="book" data-size="26"></i></div><h3>Séances de partage de connaissances</h3><p>Les membres transmettent ce qu'ils maîtrisent.</p></article>
+    <article class="feature reveal" data-delay="1"><div class="icon-badge"><i data-icon="help" data-size="26"></i></div><h3>Discussions sur les métiers</h3><p>Découvrir les métiers du génie civil et leurs parcours.</p></article>
+    <article class="feature reveal" data-delay="2"><div class="icon-badge"><i data-icon="bulb" data-size="26"></i></div><h3>Présentations de projets et d'innovations</h3><p>Valoriser les idées et les réalisations des membres.</p></article>
+    <article class="feature reveal"><div class="icon-badge"><i data-icon="handshake" data-size="26"></i></div><h3>Rencontres élèves, étudiants et professionnels</h3><p>Créer des ponts entre l'école et le monde du travail.</p></article>
+    <article class="feature reveal" data-delay="1"><div class="icon-badge"><i data-icon="cap" data-size="26"></i></div><h3>Activités éducatives</h3><p>Des initiatives pour soutenir l'apprentissage.</p></article>
+    <article class="feature reveal" data-delay="2"><div class="icon-badge"><i data-icon="flag" data-size="26"></i></div><h3>Initiatives collectives</h3><p>Des projets menés ensemble, au service de la communauté.</p></article>
+    <article class="feature reveal"><div class="icon-badge"><i data-icon="building" data-size="26"></i></div><h3>Visites techniques</h3><p>Visites de chantiers et d'ouvrages, lorsqu'elles sont organisées et autorisées.</p></article>
+  </div>
+  <div class="mt-4"><h2>Activités publiées</h2><div id="act-list"><div class="loader"><i></i></div></div></div>
+</div></section>
+</main>
+<div id="site-footer"></div>
+<script type="module" src="js/init.js"></script>
+<script type="module" src="js/activites.js"></script>
 
-    <!-- Activités Grid -->
-    <section class="section">
-      <div class="container">
-        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
-          <div class="card" data-animate style="background: white; border-radius: var(--border-radius-xl); overflow: hidden; box-shadow: var(--shadow-lg);">
-            <div style="height: 200px; background: linear-gradient(135deg, rgba(30,64,175,0.1) 0%, transparent 100%); display: flex; align-items: center; justify-content: center;">
-              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><path d="M17 21v-8a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v8"></path><path d="M21 21H3"></path><circle cx="7" cy="7" r="1"></circle><circle cx="17" cy="7" r="1"></circle></svg>
-            </div>
-            <div style="padding: 1.5rem;">
-              <h3>Conférences & Ateliers</h3>
-              <p style="color: var(--gray-600); margin-bottom: 1rem;">Des rencontres avec des professionnels pour partager des connaissances et expériences.</p>
-              <a href="evenements.html" class="btn btn-primary" style="width: 100%;">Voir les événements</a>
-            </div>
-          </div>
-          
-          <div class="card" data-animate data-delay="1" style="background: white; border-radius: var(--border-radius-xl); overflow: hidden; box-shadow: var(--shadow-lg);">
-            <div style="height: 200px; background: linear-gradient(135deg, rgba(16,185,129,0.1) 0%, transparent 100%); display: flex; align-items: center; justify-content: center;">
-              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"><path d="M2 12V4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8"></path><path d="M2 12l9 9 13-13"></path></svg>
-            </div>
-            <div style="padding: 1.5rem;">
-              <h3>Rencontres Techniques</h3>
-              <p style="color: var(--gray-600); margin-bottom: 1rem;">Des séances techniques pour échanger sur des projets concrets et des innovations.</p>
-              <a href="evenements.html" class="btn btn-primary" style="width: 100%;">Voir les activités</a>
-            </div>
-          </div>
-          
-          <div class="card" data-animate data-delay="2" style="background: white; border-radius: var(--border-radius-xl); overflow: hidden; box-shadow: var(--shadow-lg);">
-            <div style="height: 200px; background: linear-gradient(135deg, rgba(245,158,11,0.1) 0%, transparent 100%); display: flex; align-items: center; justify-content: center;">
-              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M17 21v-8a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v8"></path><path d="M21 21H3"></path></svg>
-            </div>
-            <div style="padding: 1.5rem;">
-              <h3>Stages & Formations</h3>
-              <p style="color: var(--gray-600); margin-bottom: 1rem;">Des opportunités pour développer vos compétences et votre carrière.</p>
-              <a href="opportunites.html" class="btn btn-primary" style="width: 100%;">Voir les formations</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Call to action -->
-    <section style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: white;">
-      <div class="container" style="text-align: center;" data-animate>
-        <h2 style="font-size: clamp(1.75rem, 4vw, 2.5rem); margin-bottom: 1rem;">
-          Participez à nos activités
-        </h2>
-        <p style="max-width: 600px; margin-inline: auto; margin-bottom: 2rem; opacity: 0.9;">
-          Devenez membre de GCU-BÉNIN et participez à nos activités régulières.
-        </p>
-        <a href="adhesion.html" class="btn" style="background: white; color: var(--primary); padding: 1rem 2.5rem; font-size: 1.1rem;">
-          Rejoindre GCU-BÉNIN
-        </a>
-      </div>
-    </section>
-  </main>
-
-  <div id="site-footer"></div>
-  
-  <script src="js/config.js"></script>
-  <script src="js/main.js"></script>
 </body>
 </html>

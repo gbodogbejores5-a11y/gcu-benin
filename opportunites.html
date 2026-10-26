@@ -1,91 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Opportunités de stages, formations et emplois dans le génie civil au Bénin.">
-  <meta name="theme-color" content="#1E40AF">
-  <title>Opportunités — GÉNIE CIVIL UNIS — BÉNIN</title>
-  
-  <link rel="icon" type="image/png" href="assets/images/logo.png">
-  
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stages, formations et emplois — GCU-BÉNIN</title>
+<meta name="description" content="Offres de stage, formations et emplois dans le génie civil au Bénin, vérifiées autant que possible par GCU-BÉNIN.">
+<meta name="theme-color" content="#0b1f3a">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Stages, formations et emplois — GCU-BÉNIN">
+<meta property="og:description" content="Offres de stage, formations et emplois dans le génie civil au Bénin, vérifiées autant que possible par GCU-BÉNIN.">
+<meta property="og:image" content="assets/images/og-image.jpg">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
-<body data-page="opportunites">
-  <div id="site-header"></div>
-  
-  <main id="main">
-    <!-- Hero -->
-    <section class="hero-sub" style="background: linear-gradient(rgba(30, 64, 175, 0.9), rgba(30, 64, 175, 0.8)), url('../assets/images/bg-hero.jpg'); background-size: cover; background-position: center; color: white; padding: 6rem 0;">
-      <div class="container" style="text-align: center;">
-        <h1 data-animate>Opportunités</h1>
-        <p class="hero-slogan" data-animate data-delay="1" style="font-style: italic; opacity: 0.9; max-width: 700px; margin-inline: auto;">
-          Stages, formations et emplois pour développer votre carrière dans le génie civil.
-        </p>
-      </div>
-    </section>
+<body>
+<div id="site-header"></div>
+<main id="main">
+<section class="page-hero blueprint"><div class="container"><nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a> / Opportunités</nav><h1>Stages, formations et emplois</h1><p>Les opportunités utiles aux membres, avec leur source identifiable.</p></div></section>
+<section class="section"><div class="container" id="opp-root"><div class="loader"><i></i></div></div></section>
+</main>
+<div id="site-footer"></div>
+<script type="module" src="js/init.js"></script>
+<script type="module" src="js/opportunites.js"></script>
 
-    <!-- Catégories -->
-    <section class="section">
-      <div class="container">
-        <div data-animate style="text-align: center; margin-bottom: 3rem;">
-          <h2>Catégories d'opportunités</h2>
-        </div>
-        
-        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;" data-animate>
-          <a href="#stages" class="card" style="background: white; border-radius: var(--border-radius-xl); padding: 2rem; box-shadow: var(--shadow-lg); text-align: center; display: block;">
-            <div style="width: 64px; height: 64px; background: rgba(30, 64, 175, 0.1); border-radius: var(--border-radius-full); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><path d="M2 12V4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8"></path><path d="M2 12l9 9 13-13"></path></svg>
-            </div>
-            <h3>Stages</h3>
-            <p style="color: var(--gray-600);">Des opportunités pour les étudiants et jeunes diplômés.</p>
-          </a>
-          
-          <a href="#formations" class="card" style="background: white; border-radius: var(--border-radius-xl); padding: 2rem; box-shadow: var(--shadow-lg); text-align: center; display: block;">
-            <div style="width: 64px; height: 64px; background: rgba(16, 185, 129, 0.1); border-radius: var(--border-radius-full); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"><path d="M17 21v-8a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v8"></path><path d="M21 21H3"></path></svg>
-            </div>
-            <h3>Formations</h3>
-            <p style="color: var(--gray-600);">Ateliers et formations pour développer vos compétences.</p>
-          </a>
-          
-          <a href="#emplois" class="card" style="background: white; border-radius: var(--border-radius-xl); padding: 2rem; box-shadow: var(--shadow-lg); text-align: center; display: block;">
-            <div style="width: 64px; height: 64px; background: rgba(245, 158, 11, 0.1); border-radius: var(--border-radius-full); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M17 21v-8a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v8"></path><path d="M21 21H3"></path></svg>
-            </div>
-            <h3>Emplois</h3>
-            <p style="color: var(--gray-600);">Des offres pour les professionnels du secteur.</p>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Stages -->
-    <section style="background: var(--gray-50);" class="section">
-      <div class="container">
-        <h2 data-animate>Stages récents</h2>
-        <p data-animate style="color: var(--gray-600); margin-bottom: 2rem;">Des opportunités pour les jeunes talents.</p>
-        
-        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
-          <div class="card" data-animate style="background: white; border-radius: var(--border-radius-xl); padding: 1.5rem; box-shadow: var(--shadow-lg);">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
-              <h3 style="color: var(--primary);">Bureau d'études - Structure métallique</h3>
-              <span style="background: rgba(16,185,129,0.1); color: #10B981; padding: 0.25rem 0.75rem; border-radius: var(--border-radius-full); font-size: 0.8rem;">Stage</span>
-            </div>
-            <p style="color: var(--gray-600); margin-bottom: 1rem;"><strong>Atelier GNIM</strong> - Cotonou</p>
-            <p>Durée : 3 mois | Niveau : BTS/Études pro</p>
-            <p style="margin-top: 1rem; font-size: 0.9rem;"><strong>Date limite :</strong> 15 novembre 2025</p>
-            <a href="#" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Postuler</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <div id="site-footer"></div>
-  
-  <script src="js/config.js"></script>
-  <script src="js/main.js"></script>
 </body>
 </html>

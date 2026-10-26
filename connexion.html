@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Connexion — GCU-BÉNIN</title>
+<meta name="description" content="Connexion à l'espace membre de GCU-BÉNIN, création de compte et réinitialisation du mot de passe.">
+<meta name="theme-color" content="#0b1f3a">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Connexion — GCU-BÉNIN">
+<meta property="og:description" content="Connexion à l'espace membre de GCU-BÉNIN, création de compte et réinitialisation du mot de passe.">
+<meta property="og:image" content="assets/images/og-image.jpg">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main id="main">
+<section class="auth-wrap"><div class="auth-box">
+  <div class="form-card">
+    <div class="center"><img src="assets/images/logo.svg" alt="" width="64" height="64" style="margin:0 auto 10px"><h1 style="font-size:2.2rem;margin-bottom:4px" id="au-title">Connexion</h1><p class="muted" id="au-sub">Accédez à votre espace membre.</p></div>
+    <div class="tabs mt-2" role="tablist" id="au-tabs"><button class="tab active" data-t="login" type="button">Connexion</button><button class="tab" data-t="register" type="button">Créer mon compte</button></div>
+
+    <form class="form" id="f-login" novalidate>
+      <div class="field"><label for="l-email">Adresse e-mail</label><input id="l-email" type="email" required autocomplete="username"></div>
+      <div class="field"><label for="l-pw">Mot de passe</label><input id="l-pw" type="password" required autocomplete="current-password"></div>
+      <div id="l-msg" role="alert"></div>
+      <button class="btn btn-primary" type="submit">Se connecter</button>
+      <p class="center hint"><a href="#" id="to-forgot">Mot de passe oublié ?</a></p>
+    </form>
+
+    <form class="form hidden" id="f-register" novalidate>
+      <div class="alert alert-info"><span></span><div>Créez votre compte avec <strong>l'adresse e-mail de votre demande d'adhésion acceptée</strong>. Pas encore de demande ? <a href="adhesion.html">Adhérer</a>.</div></div>
+      <div class="field"><label for="r-name">Nom complet</label><input id="r-name" required maxlength="150" autocomplete="name"></div>
+      <div class="field"><label for="r-email">Adresse e-mail</label><input id="r-email" type="email" required autocomplete="email"></div>
+      <div class="field"><label for="r-pw">Mot de passe (10 caractères minimum)</label><input id="r-pw" type="password" required minlength="10" autocomplete="new-password"><div class="strength" aria-hidden="true"><i id="r-str"></i></div><span class="hint" id="r-hint">Mélangez majuscules, minuscules, chiffres et symboles.</span></div>
+      <div class="field"><label for="r-pw2">Confirmer le mot de passe</label><input id="r-pw2" type="password" required autocomplete="new-password"></div>
+      <div id="r-msg" role="alert"></div>
+      <button class="btn btn-primary" type="submit">Créer mon compte</button>
+    </form>
+
+    <form class="form hidden" id="f-forgot" novalidate>
+      <div class="field"><label for="fg-email">Adresse e-mail du compte</label><input id="fg-email" type="email" required autocomplete="email"></div>
+      <div id="fg-msg" role="alert"></div>
+      <button class="btn btn-primary" type="submit">Envoyer le lien de réinitialisation</button>
+      <p class="center hint"><a href="#" id="to-login">Retour à la connexion</a></p>
+    </form>
+
+    <form class="form hidden" id="f-reset" novalidate>
+      <div class="field"><label for="n-pw">Nouveau mot de passe (10 caractères minimum)</label><input id="n-pw" type="password" required minlength="10" autocomplete="new-password"></div>
+      <div class="field"><label for="n-pw2">Confirmer</label><input id="n-pw2" type="password" required autocomplete="new-password"></div>
+      <div id="n-msg" role="alert"></div>
+      <button class="btn btn-primary" type="submit">Enregistrer le nouveau mot de passe</button>
+    </form>
+  </div>
+  <p class="center hint mt-2"><a href="index.html">← Retour au site</a></p>
+</div></section>
+</main>
+<div id="site-footer"></div>
+<script type="module" src="js/init.js"></script>
+<script type="module" src="js/auth.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+DOSSIER DES IMAGES — GCU-BÉNIN
+================================
+
+Déposez vos images ICI, avec EXACTEMENT ces noms (le site les détecte tout seul).
+Tant qu'une image n'existe pas, le site affiche un motif « plan d'ingénieur » élégant à la place :
+rien n'est cassé, vous pouvez les ajouter au fur et à mesure.
+
+NOM DU FICHIER   | OÙ ÇA S'AFFICHE                              | TAILLE CONSEILLÉE | POIDS MAX
+-----------------|----------------------------------------------|-------------------|-----------
+hero.jpg         | Fond de la bannière d'accueil (très visible) | 1920 x 1080 px    | 400 Ko
+about.jpg        | Photo « Qui sommes-nous » (accueil + À propos)| 1200 x 900 px    | 300 Ko
+cta.jpg          | Fond du bandeau « Devenir membre »           | 1600 x 900 px     | 300 Ko
+og-image.jpg     | Aperçu quand le site est partagé (WhatsApp…) | 1200 x 630 px     | 200 Ko
+logo.svg / .png  | Logo (en-tête, pied de page, carte membre)   | carré, 512 x 512  | 100 Ko
+favicon.svg      | Petite icône de l'onglet du navigateur       | carré             | 10 Ko
+
+CONSEILS POUR CHOISIR LES PHOTOS
+- hero.jpg : un chantier, un pont, une grue, des ingénieurs avec casques (de préférence au Bénin).
+  Choisissez une photo plutôt SOMBRE : le texte blanc par-dessus sera lisible (un voile bleu est déjà appliqué).
+- about.jpg : jeunes étudiants / techniciens sur un chantier ou en atelier.
+- Utilisez des photos dont vous avez les droits (vos photos, ou images libres : Unsplash, Pexels).
+- Compressez-les (squoosh.app, tinypng.com) avant de les déposer : un site rapide, c'est un site professionnel.
+
+LOGO DU CLIENT
+1. Mettez son logo ici sous le nom logo.png.
+2. Ouvrez js/config.js et changez la ligne :  LOGO: "assets/images/logo.png",
+
+IMAGES DYNAMIQUES (actualités, événements, galerie, équipe, partenaires, documents)
+Elles ne se mettent PAS dans ce dossier : elles se téléversent depuis l'ADMINISTRATION
+(bouton « Image » des formulaires). Elles sont stockées dans la base de données (Supabase Storage).

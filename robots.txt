@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /membre
+Disallow: /connexion
+Sitemap: https://VOTRE-DOMAINE/sitemap.xml
